@@ -3,6 +3,7 @@ from __future__ import print_function
 import os
 import sys
 import json
+import _thread
 
 try:
     import apiai
@@ -18,39 +19,42 @@ except ImportError:
     import apiai
 
 
-# demo agent acess token: e5dc21cab6df451c866bf5efacb40178
+# e5dc21cab6df451c866bf5efacb40178
 
 CLIENT_ACCESS_TOKEN = '868aec3d1e0f408392c3c2993fb05cfa'
 
 print("Dire Bonjour pour commencer \n")
+
+TimeOut = 10 #secondes
+
 def main():
     ai = apiai.ApiAI(CLIENT_ACCESS_TOKEN)
-
+    
     while True:
-        print(u"> ", end=u"")
-        user_message = input()
+        user_message= ''
+        while len(user_message)==0:
+            print(u"> ", end=u"")
+            user_message=input()
 
         request = ai.text_request()
         request.query = user_message
 
         response = json.loads(request.getresponse().read())
 
-        
-
         result = response['result']
         action = result.get('action')
         intent = result["metadata"].get('intentName')
         if intent == "AuRevoir":
-            #print("Au revoir !")
+            print("Au revoir !")
             break
 
         actionIncomplete = result.get('actionIncomplete', False)
         contexts = result.get('contexts')
 
         if len(contexts)>0 :
-            context = contexts[0].get('name')
+            context = contexts[0]
         else:
-            context=null
+            context=None
 
         print(u"< %s" % response['result']['fulfillment']['speech'])
 
