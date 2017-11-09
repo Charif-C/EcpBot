@@ -12,7 +12,13 @@ class Response:
         self.text = self.result['parameters'].get('text')
         self.message_type = self.result['parameters'].get('message_type')
         self.parent = self.result['parameters'].get('parent')
-        self. speech = response['result']['fulfillment']['speech']
+        self.speech = response['result']['fulfillment']['speech']
+
+    def _get_result(self):
+        return self.result
+
+    def _get_actionIncomplete:
+        return self.actionIncomplete
 
     def _get_text(self):
         return self.text
@@ -26,8 +32,8 @@ class Response:
     def _get_contexts(self):
         return self.contexts
 
-    def _get_parameters(self):
-        return self.parameters
+    def _get_parent(self):
+        return self.parent
 
     def _get_message_type(self):
         return self.message_type
