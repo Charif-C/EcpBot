@@ -1,9 +1,8 @@
 
 import os
 import sys
-import json
-from Response import Response
-from API import  API
+from Response import *
+from API import *
 
 print("Dire Bonjour pour commencer \n")
 
@@ -19,16 +18,16 @@ def main():
 
         rep=Response(ai._get_json_response(user_message))
         
-        result = rep._get_result
-        action = rep._get_action
-        intent = rep._get_intent
+        result = rep.result
+        action = rep.action
+        intent = rep.intent
 
         if intent == "AuRevoir":
             print("Au revoir !")
             break
 
-        actionIncomplete = rep.get_actionIncomplete
-        contexts = rep._get_contexts
+        actionIncomplete = rep.actionIncomplete
+        contexts = rep.contexts
 
         if len(contexts)>0 :
             context = contexts[0]
@@ -39,11 +38,11 @@ def main():
 
         if action is not None:
             if action == u"send_message":
-                parameters = rep._get_parameters
+                parameters = rep.parameters
 
-                text = rep._get_text
-                message_type = rep._get_message_type
-                parent = rep._get_parent
+                text = rep.text
+                message_type = rep.message_type
+                parent = rep.parent
 
                 print (
                     'text: %s, message_type: %s, parent: %s' %
