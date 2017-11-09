@@ -14,7 +14,6 @@ def main():
     while True:
         user_message= ''
         while len(user_message)==0:
-            print(u"> ", end=u"")
             user_message=ReadingMessage()
 
         rep=Response(ai._get_json_response(user_message))
