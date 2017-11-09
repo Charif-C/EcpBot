@@ -1,8 +1,8 @@
 
 import os
+from DialogFlow.API import *
 import sys
-from Response import *
-from API import *
+from DialogFlow.Response import *
 
 print("Dire Bonjour pour commencer \n")
 

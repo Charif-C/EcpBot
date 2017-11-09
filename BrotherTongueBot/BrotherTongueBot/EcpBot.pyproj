@@ -22,15 +22,18 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="API.py">
+    <Compile Include="DialogFlow\API.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="MainClass.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Response.py">
+    <Compile Include="DialogFlow\Response.py">
       <SubType>Code</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DialogFlow\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
