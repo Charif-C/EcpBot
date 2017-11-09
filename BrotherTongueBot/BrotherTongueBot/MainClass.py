@@ -3,6 +3,7 @@ import os
 from DialogFlow.API import *
 import sys
 from DialogFlow.Response import *
+from Conversational_Integration import *
 
 print("Dire Bonjour pour commencer \n")
 
@@ -14,7 +15,7 @@ def main():
         user_message= ''
         while len(user_message)==0:
             print(u"> ", end=u"")
-            user_message=input()
+            user_message=ReadingMessage()
 
         rep=Response(ai._get_json_response(user_message))
         try:
@@ -24,7 +25,7 @@ def main():
         except:
             pass
         if _intent == "AuRevoir":
-            print("Au revoir !")
+            SendingMessage("Au revoir !")
             break
 
         actionIncomplete = rep.result.actionIncomplete
@@ -35,7 +36,7 @@ def main():
         else:
             context=None
 
-        print(u"< %s" % rep.result.fulfillment.speech)
+        SendingMessage(u"< %s" % rep.result.fulfillment.speech)
 
 
 if __name__ == '__main__':

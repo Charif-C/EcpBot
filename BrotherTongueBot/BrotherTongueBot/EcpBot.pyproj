@@ -22,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Conversational_Integration.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DialogFlow\API.py">
       <SubType>Code</SubType>
     </Compile>
