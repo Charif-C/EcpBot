@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "BrotherTongueBot", "BrotherTongueBot\BrotherTongueBot.pyproj", "{0F17E845-1E1E-4755-A73C-64684336F320}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "EcpBot", "BrotherTongueBot\EcpBot.pyproj", "{0F17E845-1E1E-4755-A73C-64684336F320}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

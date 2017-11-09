@@ -3,13 +3,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>0f17e845-1e1e-4755-a73c-64684336f320</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
-    <StartupFile>BrotherTongueBot.py</StartupFile>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>
+    </StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>BrotherTongueBot</Name>
+    <Name>EcpBot</Name>
     <RootNamespace>BrotherTongueBot</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -24,7 +26,9 @@
     <Compile Include="API.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BrotherTongueBot.py" />
+    <Compile Include="MainClass.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Response.py">
       <SubType>Code</SubType>
     </Compile>
