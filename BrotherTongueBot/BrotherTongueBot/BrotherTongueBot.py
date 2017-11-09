@@ -5,12 +5,7 @@ import json
 from Response import Response
 from API import  API
 
-# e5dc21cab6df451c866bf5efacb40178
-
-
 print("Dire Bonjour pour commencer \n")
-
-TimeOut = 10 #secondes
 
 def main():
     

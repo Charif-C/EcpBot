@@ -18,11 +18,9 @@ class API:
     def __init__(self):
         #Connexion api
         self.ai=apiai.ApiAI(CLIENT_ACCESS_TOKEN)
-        #self.request= ai.text_request()
-        
-    #def _send_user_message(self,user_message):
         
     def _get_json_response(self,user_message):
+        #Sending message and getting response
         request=self.ai.text_request()
         request.query= user_message
         return json.loads(request.getresponse().read().decode())

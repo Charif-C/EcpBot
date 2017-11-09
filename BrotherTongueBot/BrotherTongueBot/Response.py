@@ -15,6 +15,7 @@ class Response:
         self.message_type = self.result['parameters'].get('message_type')
         self.parent = self.result['parameters'].get('parent')
         self. speech = response['result']['fulfillment']['speech']
+
     def _get_text(self):
         return self.text
 
