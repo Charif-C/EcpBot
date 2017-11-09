@@ -1,5 +1,3 @@
-import _json
-
 class Response:
     """description of class"""
     def __init__(self, response):
