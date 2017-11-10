@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "EcpBot", "BrotherTongueBot\EcpBot.pyproj", "{0F17E845-1E1E-4755-A73C-64684336F320}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "EcpBtBot", "EcpBtBot.pyproj", "{3CEB1351-B1DC-4F6D-A9B6-BEB5F92D0A3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0F17E845-1E1E-4755-A73C-64684336F320}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F17E845-1E1E-4755-A73C-64684336F320}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CEB1351-B1DC-4F6D-A9B6-BEB5F92D0A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CEB1351-B1DC-4F6D-A9B6-BEB5F92D0A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E507024A-F6DD-4134-B026-D84210375CB8}
+		SolutionGuid = {4C4F03C8-F3B8-4EE3-BD70-57C47BA0A543}
 	EndGlobalSection
 EndGlobal
