@@ -20,7 +20,6 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Bot.py" />
     <Compile Include="Conversational_Integration.py" />
     <Compile Include="DialogFlow\API.py" />
     <Compile Include="DialogFlow\Response.py" />
